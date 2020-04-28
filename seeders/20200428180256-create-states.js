@@ -321,7 +321,7 @@ module.exports = {
         isBetaMember: false
       }], {});
     */
-    var statesDates = states.map(function(s) {
+    let statesDates = states.map(function(s) {
       s.visited = false;
       s.createdAt = new Date(),
           s.updatedAt = new Date()

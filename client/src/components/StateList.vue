@@ -41,9 +41,8 @@
                     this.states = data
                 })
             },
-            // // updateVisited method used to call $stateService.setVisited and call getAll() to update the states array
             updateVisited(stateName, stateVisited) {
-                this.$stateService.setVisited(stateName, stateVisited).then(data => {
+                this.$stateService.setVisited(stateName, stateVisited).then(() => {
                     this.getAll()
                 })
             }
