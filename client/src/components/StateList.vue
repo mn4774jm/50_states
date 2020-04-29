@@ -16,17 +16,9 @@
                     ></State>
             </div>
 
-            <div class="p-2" v-for="state in states" v-bind:key="state.name">
-<!--                State component v-on:isVisited binds to updateVisited method-->
-                <State
-                    v-bind:state = 'state'
-                    v-on:isVisited="updateVisited">
-
-                </State>
             </div>
         </div>
 
-    </div>
 </template>
 
 <script>

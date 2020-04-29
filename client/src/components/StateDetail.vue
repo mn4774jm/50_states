@@ -44,7 +44,7 @@ import { LMap, LTileLayer } from 'vue2-leaflet'
             this.state.name = this.$route.params.state
             // Not required, prevents user dragging map away from state.
             // User can still zoom in and out
-            this.$refs.stateMap.mapObject.dragging.disabled()
+            this.$refs.stateMap.mapObject.dragging.disable()
             this.fetchSomeData()
         },
         methods: {
