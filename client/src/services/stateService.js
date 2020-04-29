@@ -12,5 +12,11 @@ export default {
         return axios.patch('/api/state/' + stateName, { visited: visited }).then(response => {
             return response.data
         })
+    },
+    // make requests to new API route. Takes stateName as an argument, used to build URL to request
+    getOne(stateName) {
+        return axios.get('/api/states/' + stateName).then( response => {
+            return response.data
+        })
     }
 }

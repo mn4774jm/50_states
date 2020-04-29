@@ -12,9 +12,11 @@
         </span>
     </div>
 
-        <p class="text-right p-2">Header image by
+        <p class="text-right credit p-2">Header image by
 <!--            external links are a elements-->
         <a href="https://unsplash.com/photos/KpBXAOs80YI">@chrislawton via Unsplash</a>
+        <br>
+        <a href="https://icons8.com/icon/43632">Map icon by Icons8</a>
         </p>
 
     </div>
@@ -27,4 +29,8 @@
 </script>
 
 <style scoped>
+    .credit {
+        font-size: 0.1em;
+        font-style: italic;
+    }
 </style>

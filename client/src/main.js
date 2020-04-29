@@ -18,6 +18,9 @@ import 'bootstrap-vue/dist/bootstrap-vue.css'
 // Add API service to vue prototype
 Vue.prototype.$stateService = StateAPIService
 
+//addleaflets css
+import "leaflet/dist/leaflet.css"
+
 new Vue({
   render: h => h(App),
   router /* include the routes when creating vue instance*/

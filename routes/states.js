@@ -11,6 +11,20 @@ router.get('/states', function(req, res, next){
         })
         .catch( err => next.err())
 })
+// request to handle requests to /state/:name
+// States.findOne with req.params to query the database
+// returns the state data, as JSON, if the state is in the DB
+router.get('/states/:name', function(req, res, next) {
+    States.findOne({where: {name: req.params.name}})
+        .then(state => {
+            if (state) {
+                return res.json(state)
+            } else {
+                return res.status(404).send()
+            }
+        })
+        .catch( err => next.err())
+})
 
 // Uses :name in the route path to match any patch request to /state/anything
 // DB query uses the name parameter
